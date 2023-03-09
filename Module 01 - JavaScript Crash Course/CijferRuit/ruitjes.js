@@ -1,4 +1,4 @@
-let cijfer = prompt("Voer een cijfer in voor de ruit");
+let cijfer = prompt("Voer een cijfer in:");
 let lijstje = "";
 for (let getallen = 1; getallen <= cijfer; getallen++){
     lijstje += getallen;
