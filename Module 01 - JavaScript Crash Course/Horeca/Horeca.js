@@ -43,12 +43,9 @@ for (const [key, value] of Object.entries(bonnetje)) {
     const display = `${value}x ${key} - €${(value * dranken[key]).toFixed(2)}`
     document.getElementById("Bonnetje").innerText = "Uw Bonnetje - Bedankt voor het bestellen!";
     document.getElementById("Dranken").innerText += display + '\n';
+    document.getElementById("Groet").innerText = "Graag tot ziens, en een fijne dag verder!";
 }
 
 if (totale_prijs > 0) {
-    document.getElementById("Totale_prijs").innerText = "Totaal: €" + totale_prijs.toFixed(2);
+    document.getElementById("Totale_prijs").innerText = "Totaal: €" + totale_prijs.toFixed(2);   
 }
-
-
-
-
