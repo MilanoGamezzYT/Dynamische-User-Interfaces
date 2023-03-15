@@ -1,11 +1,21 @@
-let cijfer = prompt("Voer een cijfer in:");
-let lijstje = "";
-for (let getallen = 1; getallen <= cijfer; getallen++){
-    lijstje += getallen;
-    document.getElementById("antwoord").innerText += lijstje +'\n';
-    lijstje = getallen === parseInt(cijfer) ? lijstje += "" : lijstje += "-";
+let cijfer = parseInt(prompt("Voer een cijfer in"));
+let ruit = "";
+
+for(let i = 0; i < cijfer; i++){
+    let rij = "";
+    for(let x = 1; x <= i; x++){
+        rij += x + "-";
+    }
+    ruit += rij.slice(0, -1) + "\n";
 }
-for (let getallen = cijfer; getallen >= 1; getallen--) {
-    lijstje = lijstje.replace(getallen, '').split("").reverse().join("").replace('-', '').split("").reverse().join("");
-    document.getElementById("antwoord").innerText += lijstje + '\n';
+
+for(let i = cijfer; i > 0; i--){
+    let rij = "";
+    for(let x = 1; x <= i; x++){
+        rij += x + "-";
+    }
+    ruit += rij.slice(0, -1) + "\n";
 }
+
+element = document.getElementById("antwoord")
+element.innerText = ruit;
