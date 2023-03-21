@@ -10,7 +10,7 @@ function checkKey(e) {
 	console.log("key nr = " + e.keyCode);
     e = e || window.event;
 
-    const diff = 2;
+    const diff = 3;
     const breach = 84
 
     let position = parseInt(image.style.backgroundPosition)
