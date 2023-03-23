@@ -1,0 +1,22 @@
+body {
+    background-color:lightgray;
+}
+
+.partij-button {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .partij-button:hover {
+    background-color: #0b7dda;
+  }
+  
+  .uitslag {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
