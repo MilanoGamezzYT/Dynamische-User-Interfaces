@@ -1,5 +1,5 @@
 const stemgedeelte = document.getElementById("stemgedeelte");
-const partijen = [];
+let partijen = [];
 
 stemgedeelte.addEventListener("click", function(event) {
   if (event.target.classList.contains("partij-button")) {
